@@ -18,7 +18,7 @@ public class Salario {
     }
     public double calculaAcrescimo (){
 
-        return this.increaseSalary =this.netSalary+((this.tax/100)*this.grossSalary);
+        return this.increaseSalary =this.grossSalary+((this.tax/100)*this.grossSalary);
     }
 
     public   void exibedados1 (){
@@ -27,7 +27,7 @@ public class Salario {
     }
     public   void exibedados2 (){
         System.out.println("Nome= " + this.name);
-        System.out.println("Salario Liquido com acrescimo: " + calculaAcrescimo());
+        System.out.println("Salario Bruto com acrescimo: " + calculaAcrescimo());
     }
 
     public String getName() {
